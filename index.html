@@ -6,6 +6,7 @@
     <title>BARCA HISTORY</title>
     <link href="estilo.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/bc9031ede6.js" crossorigin="anonymous"></script>
+    <script src="funcion.js"></script>
 </head>
 <body>
     <header class="header">
@@ -13,28 +14,34 @@
             <div class="logo">
                 <h1><img src="img/escudoBarkita.png" alt="Logo" style="width: 30px "> FC BARCELONA</h1>
             </div>
-            
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Opiniones<i class="icon-abajo2"></i></a></li>
-                    <li><a href="#">Partidos</a>
-                        <ul class="submenu">
-                            <li><a href="#">Real Sociedad</a></li>
-                            <li><a href="#">At. Bilbao</a></li>
-                            <li><a href="#">Eibar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Estadísticas</a></li>
-                    <li><a href="#">Historia</a></li>
-                </ul>
+            <nav id="menuicono">
+                <i class="fas fa-bars" id="menu-img"></i>
+               
+            </nav>
+            <nav class="menu" id="menuID">
+                <div>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Opiniones<i class="icon-abajo2"></i></a></li>
+                        <li><a href="#">Partidos</a>
+                            <ul class="submenu">
+                                <li><a href="#">Real Sociedad</a></li>
+                                <li><a href="#">At. Bilbao</a></li>
+                                <li><a href="#">Eibar</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Estadísticas</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </div>
+                
             </nav>
         </div>
     </header>
 
     <!--Portada-->
    <!--<div class="portada"></div>--> 
-   <div class="espacio-header"></div>
+   <div class="espacio-header" id="espacioMenu"></div>
     <div class="mas"><img src='img/mas-que-un-club.jpg'></div>
     
         <div class="introduccion">
