@@ -233,7 +233,7 @@ article iframe{
         margin-top: 40px;
     }
 }
-@media (max-width: 887px) {
+@media (max-width: 857px) {
     .menu {
     display: none;
     width: 100%;
@@ -247,13 +247,23 @@ article iframe{
         text-align: center;
         background-color: #181733;
     }
-    
+    #menublock{
+        display: none;
+    }
     #menuicono {
     display: block;
     }
-    #espacioMenu{
-    height: 395px;
+    
+}
+@media (min-width: 857px) {
+    .menu {
+    display: block;
     }
+   
+    #menublock{
+        display: block;
+    }
+   
     
 }
 @media (max-width: 1534px) {
