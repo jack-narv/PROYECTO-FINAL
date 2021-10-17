@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REAL SOCIEDAD</title>
-    <link href="real.css" rel="stylesheet" type="text/css">
+    <title>CARRITO</title>
+    <link href="carrito.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/bc9031ede6.js" crossorigin="anonymous"></script>
-    <script src="real.js"></script>
+    <script src="carrito.js"></script>
 </head>
 <body>
     <header class="header">
@@ -25,15 +25,15 @@
                         <li><a href="../loguin/loguin.html">Login<i class="icon-abajo2"></i></a></li>
                         <li><a href="#">Partidos</a>
                             <ul class="submenu">
-                                <li><a href="#">Real Sociedad</a></li>
+                                <li><a href="../RealS/real.html">Real Sociedad</a></li>
                                 <li><a href="../bilbao/bilbao.html">At. Bilbao</a></li>
                                 <li><a href="../getafe/getafe.html">Getafe</a></li>
                             </ul>
                         </li>
-                        <li><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
+                        <li><a href="#">Estadísticas</a></li>
                         <li><a href="#">Tienda</a>
                             <ul class="submenu">
-                                <li><a href="../carrito/carrito.html">Ropa</a></li>
+                                <li><a href="#">Ropa</a></li>
                                 <li><a href="#">Accesorios</a></li>
                                 <li><a href="#">Dpeorte</a></li>
                             </ul>
@@ -49,29 +49,111 @@
    <!--<div class="portada"></div>--> 
    <div class="espacio-header" id="espacioMenu"></div>
     <div class="mas"><img src='../img/mas-que-un-club.jpg'></div>
-        <article>
-            <h1>FC Barcelona vs Real Sociedad (4-2)</h1>
-            <br>
-            <br>
+        <section id="tienda">
+            <div class="productos">
+              <h2 id="nombre">Balón Barkita</h2>
+              <img src="./productos/balonBarkita.jpg">
+              <h3>$25.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Calentador Barkita</h2>
+              <img src="./productos/calentadorBarca.jpg">
+              <h3>$50.00</h3>
+              <button type="button" class="comprar" >Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Camiseta Barkita</h2>
+              <img src="./productos/camisetaBarkita.jpg">
+              <h3>$35.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Canilleras Barkita</h2>
+              <img src="./productos/canilleraBarca.jpg">
+              <h3>$10.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Chompa Barkita</h2>
+              <img src="./productos/chompaBarca.jpg">
+              <h3>$40.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Guantes Barkita</h2>
+              <img src="./productos/guantesBarca.jpg">
+              <h3>$07.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Mochila Barkita</h2>
+              <img src="./productos/mochilaBarkita.jpg">
+              <h3>$45.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Zapatos Barkita</h2>
+              <img src="./productos/puposBarkita.jpg">
+              <h3>$100.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Uniforme Barkita</h2>
+              <img src="./productos/uniformeBarkita.jpg">
+              <h3>$80.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Gorra Barkita</h2>
+              <img src="./productos/gorraBarkita.jpg">
+              <h3>$15.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Bandera Barkita</h2>
+              <img src="./productos/banderaBarkita.jpg">
+              <h3>$20.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Cuaderno Barkita</h2>
+              <img src="./productos/cuadernoBarkita.jpg">
+              <h3>$03.50</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+        </section>
+        <section id="carrito">
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LPmGcGuqsMc" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h1>CARRITO DE COMPRAS</h1>
+                <aside>
+                    <p class="titulos" id="tituloFoto">Foto</p>
+                    <p class="titulos" id="tituloProducto">Producto</p>
+                    <p class="titulos" id="tituloPrecio">Precio</p>
+                    <p class="titulos" id="tituloCantidad">Cantidad</p>
+                </aside>
+                
+                
+                <div id="foto">
+                    
+                </div>
+                <div id="producto">
 
-            <br>
-            <br>
+                </div>
+                <div id="precios">
 
-            <img src = "../img/ESTADISTICAS_REAL.jpg">
-            <img src = "../img/INFLUENCIA_REAL.jpg">
-
-        </article>
-        <aside>
-            <img src = "../img/BraithGOD.jpg">
-            <img src = "../img/PiqueGOD.jpg">
-            <img src = "../img/MemBraith.jpg">
-            <img src = "../img/Sergi_Romuerto.jpg">
+                </div>
+                <div id="cantidad">
+                </div>
+                <br>
+              <button type="button" id="sumar">Comprar</button>
             
-        </aside>
+        </section>
+        <section id="total">
+            <h1>TOTAL A PAGAR</h1>
+            <div id="totalPagar"></div>
+            <button type="button" id="pagar">Pagar</button>
+        </section>
     <footer>
         <div class="container-footer-all">
             <div class="container-body">

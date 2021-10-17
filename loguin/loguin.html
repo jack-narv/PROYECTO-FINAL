@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REAL SOCIEDAD</title>
-    <link href="real.css" rel="stylesheet" type="text/css">
+    <title>LOGUIN</title>
+    <link href="loguin.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/bc9031ede6.js" crossorigin="anonymous"></script>
-    <script src="real.js"></script>
+    <script src="loguin.js"></script>
 </head>
 <body>
     <header class="header">
@@ -22,10 +22,10 @@
                 <div>
                     <ul>
                         <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../loguin/loguin.html">Login<i class="icon-abajo2"></i></a></li>
+                        <li><a href="#">Login<i class="icon-abajo2"></i></a></li>
                         <li><a href="#">Partidos</a>
                             <ul class="submenu">
-                                <li><a href="#">Real Sociedad</a></li>
+                                <li><a href="../RealS/real.html">Real Sociedad</a></li>
                                 <li><a href="../bilbao/bilbao.html">At. Bilbao</a></li>
                                 <li><a href="../getafe/getafe.html">Getafe</a></li>
                             </ul>
@@ -49,29 +49,20 @@
    <!--<div class="portada"></div>--> 
    <div class="espacio-header" id="espacioMenu"></div>
     <div class="mas"><img src='../img/mas-que-un-club.jpg'></div>
-        <article>
-            <h1>FC Barcelona vs Real Sociedad (4-2)</h1>
-            <br>
-            <br>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LPmGcGuqsMc" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            <br>
-            <br>
-
-            <img src = "../img/ESTADISTICAS_REAL.jpg">
-            <img src = "../img/INFLUENCIA_REAL.jpg">
-
-        </article>
-        <aside>
-            <img src = "../img/BraithGOD.jpg">
-            <img src = "../img/PiqueGOD.jpg">
-            <img src = "../img/MemBraith.jpg">
-            <img src = "../img/Sergi_Romuerto.jpg">
-            
-        </aside>
+<div id="padre">
+    <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+            <input type="text" name="n" placeholder="Nombres" required="required" />
+            <input type="text" name="a" placeholder="Apellidos" required="required" />
+            <input type="email" name="e" placeholder="E-mail" required="required" />
+            <input type="password" name="p" placeholder="Contraseña" required="required" />
+            <input type="password" name="rp" placeholder="Repetir Contraseña" required="required" />
+            <button type="submit" id="boton">Regístrate</button>
+        </form>
+    </div>
+</div>
+    
     <footer>
         <div class="container-footer-all">
             <div class="container-body">
