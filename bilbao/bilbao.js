@@ -76,7 +76,7 @@ function mostrarMenu() {
         if (!visible) {
              elemento.style.display = "block";
              ul.style.display = "block";
-             espacio.style.height = "395px";
+             espacio.style.height = "460px";
              visible = true;
 
         } 

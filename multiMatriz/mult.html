@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GETAFE</title>
-    <link href="getafe.css" rel="stylesheet" type="text/css">
+    <title>CARRITO</title>
+    <link href="mult.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/bc9031ede6.js" crossorigin="anonymous"></script>
-    <script src="getafe.js"></script>
+    <script src="mult.js"></script>
 </head>
 <body>
     <header class="header">
@@ -27,7 +27,7 @@
                             <ul class="submenu">
                                 <li><a href="../RealS/real.html">Real Sociedad</a></li>
                                 <li><a href="../bilbao/bilbao.html">At. Bilbao</a></li>
-                                <li><a href="#">Getafe</a></li>
+                                <li><a href="../getafe/getafe.html">Getafe</a></li>
                             </ul>
                         </li>
                         <li><a href="../estadisticas/estadisticas.html">Estadísticas</a></li>
@@ -41,7 +41,7 @@
                         <li><a href="#">Matriz</a>
                             <ul class="submenu">
                                 <li><a href="../sumaMatriz/suma.html">Suma-Resta</a></li>
-                                <li><a href="../multiMatriz/mult.html">Multiplicación</a></li>
+                                <li><a href="#">Multiplicación</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -55,45 +55,24 @@
    <!--<div class="portada"></div>--> 
    <div class="espacio-header" id="espacioMenu"></div>
     <div class="mas"><img src='../img/mas-que-un-club.jpg'></div>
-        <article>
-            <h1>FC Barcelona vs Getafe CF (2-1)</h1>
-            <br>
-            <br>
-            <section id="reproductor">
-                <video id="medio" width="720" height="400" loop poster="../videos/GETAFE.jpg">
-                    <source src="../videos/GETAFE.mp4">
-                    
-                </video>
-                <nav>
-                    <div id="botones">
-                        <input type="button" id="reproducir" value=">">
-                        <input type="button" id="silenciar" value="Silencio">
-                    </div>
-                    <div id="barra">
-                        <div id="progreso"></div>
-                    </div>
-                        <div id="control">
-                            <input type="range" id="volumen" min="0" max="1" step="0.1"
-                            value="0.6">
-                        </div>
-                        <div class="recuperar"></div>
-                </nav>
-            </section>
-
-            <br>
-            <br>
-
-            <img src = "../img/ESTADISTICAS_GETAFE.jpg">
-            <img src = "../img/INFLUENCIA_GETAFE.jpg">
-
-        </article>
-        <aside>
-            <img src = "../img/holandeses.jpg">
-            <img src = "../img/SergiMem.jpg">
-            <img src = "../img/MemphisGOD3.jpg">
-            <img src = "../img/equipo_getafe.jpg">
-            
-        </aside>
+       
+    <div id="contenedor">
+        <h1>MULTIPLICACIONES CON MATRICES</h1>
+        <h4>Ingrese el número de filas de su primera matriz</h4>
+        <input type="number" id="filas">
+        <h4>Ingrese el número de columnas de su primera matriz</h4>
+        <input type="number" id="columnas">
+        <h4>Ingrese el número de filas de su segunda matriz</h4>
+        <input type="number" id="filas2" onclick="filasSegunda()">
+        <h4>Ingrese el número de columnas de su segunda matriz</h4>
+        <input type="number" id="columnas2">
+         <br>
+         <br>
+         <button type="button" onclick="validacion()">Aceptar</button>
+        <section id="proceso"></section>
+        <aside id="respuesta"></aside>
+    </div>
+    
     <footer>
         <div class="container-footer-all">
             <div class="container-body">
