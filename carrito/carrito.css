@@ -120,7 +120,7 @@ aside{
 aside img {
     width: 500px;
 }
-
+/*ESTILO DE LOS PRODUCTOS*/
 .productos{
     position: relative;
     display: inline-block;
@@ -152,6 +152,7 @@ aside img {
     border-radius: 6px;
     border: 2px solid #0016b0;
 }
+/*ESTILOS DEL CARRITO*/
 #sumar{
     text-decoration: none;
     padding: 10px;
@@ -204,8 +205,8 @@ aside img {
     border: 5px solid #181733;
     text-align: center;
     background-color: #fafafa;
-    margin: 20px;
-    width: 50%;
+    margin: 10px;
+    width: 65%;
 }
 #carrito>div{
     
@@ -248,7 +249,26 @@ aside{
     padding-top: 57px;
 }
 #cantidad>div{
-    padding-top: 53px;
+    padding-top: 57px;
+}
+.borrar{
+    margin-top: 57px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.borrar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 #carrito>div>div{
     height: 120px;
@@ -279,8 +299,8 @@ aside{
     border: 5px solid #181733;
     text-align: center;
     background-color: #fafafa;
-    margin: 20px;
-    width: 45%;
+    margin: 10px;
+    width: 30%;
     
 }
 

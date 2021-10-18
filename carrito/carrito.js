@@ -8,6 +8,8 @@ function iniciar() {
     var comprar = document.getElementById("sumar");
     comprar.addEventListener("click", sumar);
     elemento.addEventListener("click", mostrarMenu);
+    
+
     var botones = document.querySelectorAll(".comprar");
     for(var f=0;f<botones.length; f++){
         var boton = botones[f];
@@ -17,7 +19,7 @@ function iniciar() {
                 agregarCarrito(miBoton);
             };
         }(f));
-    } 
+    }
     
 }
 
@@ -34,6 +36,7 @@ function mostrar(){
     var producto = document.getElementById("producto");
     var precio = document.getElementById("precios");
     var cantidad = document.getElementById("cantidad");
+    var eliminar = document.getElementById("eliminar");
 
    // producto.innerHTML = '<div><input type="button" onclick="borrarTodos()" value="Borrar Todo"></div>';
 
@@ -51,7 +54,31 @@ function mostrar(){
             foto.insertAdjacentHTML("afterbegin", '<div><img id="fotito"></div>');
             var elemento = document.getElementById("fotito");
             elemento.setAttribute("src", ""+valor);
-            cantidad.innerHTML += "<div><input id='numero' type='number' value=1></div>";
+            //cantidad.innerHTML += "<div><input id='numero' type='number' value=1></div>";
+            cantidad.insertAdjacentHTML("afterbegin", "<div><input id='numero' type='number' value=1></div>");
+            eliminar.innerHTML += "<div class='divBorrar'><button class='borrar'>X</button></div>";
+
+
+            var borrarFoto = document.querySelectorAll("#foto>div");
+            var borrarProducto = document.querySelectorAll("#producto>div");
+            var borrarPrecio = document.querySelectorAll("#precios>div");
+            var borrarCantidad = document.querySelectorAll("#cantidad>div");
+            var btnEliminar = document.querySelectorAll(".divBorrar");
+            var posicion;
+            for(var i=0;i<btnEliminar.length; i++){
+                var btn = btnEliminar[i];
+                btn.addEventListener("click", function(x){
+                    return function(){
+                        posicion = x;
+                        btnEliminar[posicion].parentNode.removeChild(btnEliminar[posicion]);
+                        borrarFoto[posicion].parentNode.removeChild(borrarFoto[posicion]);
+                        borrarProducto[posicion].parentNode.removeChild(borrarProducto[posicion]);
+                        borrarPrecio[posicion].parentNode.removeChild(borrarPrecio[posicion]);
+                        borrarCantidad[posicion].parentNode.removeChild(borrarCantidad[posicion]);
+                    };
+                }(i));
+            }  
+            
  
 }
 
@@ -74,6 +101,15 @@ function mostrarMenu() {
 
         }
 } 
+
+function eliminar(){
+
+    
+}
+/*function borrar(posicion){
+    var btnEliminar = document.querySelectorAll(".divBorrar");
+    btnEliminar[posicion].parentNode.removeChild(btnEliminar[posicion]);
+}*/
 
 function sumar(){
     var total = document.getElementById("totalPagar");
