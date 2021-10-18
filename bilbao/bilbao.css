@@ -120,6 +120,63 @@ aside img {
     position: relative;
 
 }
+/*ESTILOS DEL REPRODUCTOR DE VIDEO*/
+#reproductor{
+    
+    width: 732px;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 10px 5px 5px 5px;
+    background: #181733;
+    border: 1px solid #c51430;
+    border-radius: 10px;
+}
+#reproducir, #silenciar{
+    margin-left: 5px;
+    padding: 5px 10px;
+    width: 70px;
+    color: white;
+    border-radius: 1px solid white;
+    background: #c51430;
+    font-weight: bold;
+    border: 10px;
+}
+section>nav{
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#botones{
+    display: flex;
+    justify-content: center;
+    float: left;
+    padding-left: 5px;
+    
+}
+#barra{
+    float: left;
+    width: 400px;
+    padding: 2px;
+    margin: 2px 5px;
+    border: 1px solid #CCCCCC;
+    background: #c51430;
+}
+#control{
+    display: flex;
+    justify-content: center;
+    background: #c51430;
+    height: 25px;
+    margin-right: 5px;
+}
+
+#progreso{
+    width: 0px;
+    height: 16px;
+    background: #181733;
+}
+.recuperar{
+    clear: both;
+}
 
 /* ESTILOS DEL FOOTER*/
 footer{

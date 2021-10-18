@@ -54,9 +54,26 @@
             <br>
             <br>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/LPmGcGuqsMc" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-             encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section id="reproductor">
+                <video id="medio" width="720" height="400" loop poster="../videos/REAL_SOCIEDAD.jpg">
+                    <source src="../videos/REAL_SOCIEDAD.mp4">
+                    
+                </video>
+                <nav>
+                    <div id="botones">
+                        <input type="button" id="reproducir" value=">">
+                        <input type="button" id="silenciar" value="Silencio">
+                    </div>
+                    <div id="barra">
+                        <div id="progreso"></div>
+                    </div>
+                        <div id="control">
+                            <input type="range" id="volumen" min="0" max="1" step="0.1"
+                            value="0.6">
+                        </div>
+                        <div class="recuperar"></div>
+                </nav>
+            </section>
 
             <br>
             <br>
