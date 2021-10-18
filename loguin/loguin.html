@@ -58,13 +58,14 @@
 <div id="padre">
     <div class="login">
         <h1>Login</h1>
-        <form method="post">
+        <form name="login" method="post">
             <input type="text" name="n" placeholder="Nombres" required="required" />
             <input type="text" name="a" placeholder="Apellidos" required="required" />
             <input type="email" name="e" placeholder="E-mail" required="required" />
-            <input type="password" name="p" placeholder="Contraseña" required="required" />
-            <input type="password" name="rp" placeholder="Repetir Contraseña" required="required" />
-            <button type="submit" id="boton">Regístrate</button>
+            <input type = "password" pattern ="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$"
+             name="rp" id="pass" maxlength="15" placeholder="Contraseña" required="required" />
+            <input type="password" id="reppass" name="p" maxlength="15" placeholder="Repetir Contraseña" required="required" />
+            <button type="submit" id="registro">Regístrate</button>
         </form>
     </div>
 </div>

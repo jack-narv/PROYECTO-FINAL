@@ -146,7 +146,7 @@ input {
 	outline: none;
 	padding: 10px;
 	font-size: 20px;
-	color: white;
+	color: black;
 	border-bottom: 1px solid white;
 	
 }
@@ -156,7 +156,7 @@ input:focus{
     border: 1px solid white;
 }
 
-#boton{
+#registro{
     text-decoration: none;
     padding: 10px;
     font-weight: 600;
@@ -168,7 +168,7 @@ input:focus{
     margin-top: 20px;
     margin-left: 33%;
 }
-#boton:hover{
+#registro:hover{
     color: black;
     background-color: #ffffff;
     cursor: pointer;
