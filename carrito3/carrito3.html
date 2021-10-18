@@ -3,10 +3,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CARRITO</title>
-    <link href="suma.css" rel="stylesheet" type="text/css">
+    <title>DEPORTE</title>
+    <link href="carrito3.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/bc9031ede6.js" crossorigin="anonymous"></script>
-    <script src="suma.js"></script>
+    <script src="carrito3.js"></script>
 </head>
 <body>
     <header class="header">
@@ -35,12 +35,12 @@
                             <ul class="submenu">
                                 <li><a href="../carrito/carrito.html">Ropa</a></li>
                                 <li><a href="../carrito2/carrito2.html">Accesorios</a></li>
-                                <li><a href="../carrito3/carrito3.html">Deporte</a></li>
+                                <li><a href="#">Deporte</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Matriz</a>
                             <ul class="submenu">
-                                <li><a href="#">Suma-Resta</a></li>
+                                <li><a href="../sumaMatriz/suma.html">Suma-Resta</a></li>
                                 <li><a href="../multiMatriz/mult.html">Multiplicación</a></li>
                             </ul>
                         </li>
@@ -55,20 +55,102 @@
    <!--<div class="portada"></div>--> 
    <div class="espacio-header" id="espacioMenu"></div>
     <div class="mas"><img src='../img/mas-que-un-club.jpg'></div>
-       
-    <div id="contenedor">
-        <h1>SUMA Y RESTA CON MATRICES</h1>
-        <h4>Ingrese el número de filas de sus matrices</h4>
-        <input type="number" id="filas">
-        <h4>Ingrese el número de columnas de sus matrices</h4>
-        <input type="number" id="columnas">
-         <br>
-         <br>
-         <button type="button" onclick="agregarInput()">Aceptar</button>
-        <section id="proceso"></section>
-        <aside id="respuesta"></aside>
-    </div>
-
+        <section id="tienda">
+            <div class="productos">
+              <h2 id="nombre">Balón Barkita</h2>
+              <img src="./productos/balonBarkita.jpg">
+              <h3>$20.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Canilleras Barca</h2>
+              <img src="./productos/canilleraBarca.jpg">
+              <h3>$10.00</h3>
+              <button type="button" class="comprar" >Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Casco Barkita</h2>
+              <img src="./productos/casco_barkita.jpg">
+              <h3>$35.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Conos Barkita</h2>
+              <img src="./productos/conos_barkita.jpg">
+              <h3>$07.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Funda Barkita</h2>
+              <img src="./productos/funda_barkita.jpg">
+              <h3>$40.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Gafas Barkita</h2>
+              <img src="./productos/gafas_barkita.jpg">
+              <h3>$15.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Guantes Barkita</h2>
+              <img src="./productos/guantesBarca.jpg">
+              <h3>$20.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Maleta Barkita</h2>
+              <img src="./productos/maleta_barkita.jpg">
+              <h3>$40.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Muñequeras</h2>
+              <img src="./productos/muñequeras_barkita.jpg">
+              <h3>$10.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Zapatos Barkita</h2>
+              <img src="./productos/puposBarkita.jpg">
+              <h3>$100.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Reloj Barkita</h2>
+              <img src="./productos/reloj_barkita.jpg">
+              <h3>$25.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+            <div class="productos">
+                <h2>Toalla Barkita</h2>
+              <img src="./productos/toalla_barkita.jpg">
+              <h3>$20.00</h3>
+              <button type="button" class="comprar">Añadir al carrito</button>
+            </div>
+        </section>
+        <section id="carrito">
+            
+                <h1>CARRITO DE COMPRAS</h1>
+                <aside >
+                    <p  id="tituloFoto" class="titulos">Lista de Productos</p>
+                    
+                </aside>
+                
+                <div id="foto"></div>
+                <div id="producto"></div>
+                <div id="precios"></div>
+                <div id="cantidad"></div>
+                <div id="eliminar"></div>
+                <br>
+              <button type="button" id="sumar">Comprar</button>
+            
+        </section>
+        <section id="total">
+            <h1>TOTAL A PAGAR</h1>
+            <div id="totalPagar"></div>
+            <button type="button" id="pagar">Pagar</button>
+        </section>
     <footer>
         <div class="container-footer-all">
             <div class="container-body">
