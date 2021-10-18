@@ -24,12 +24,29 @@ function iniciar() {
 }
 
 function agregarCarrito(miBoton){
+    var Productos = document.querySelectorAll("#producto>div");
+    var enCarrito = false;
     var productos = document.querySelectorAll(".productos");
-    sessionStorage.setItem('foto', productos[miBoton].querySelector("img").getAttribute('src'));
-    sessionStorage.setItem('producto', productos[miBoton].querySelector("h2").innerHTML);
-    sessionStorage.setItem('precio', productos[miBoton].querySelector("h3").innerHTML);
+    for(var f=0;f<Productos.length; f++){
+        var prd = Productos[f];
+        //console.log("PRD: "+prd.innerText);
+        //console.log("producto: "+productos[miBoton].querySelector("h2").innerHTML);
+        if(prd.innerText == productos[miBoton].querySelector("h2").innerHTML){
+            enCarrito = true;
+        }
 
-    mostrar();
+    }
+    if(!enCarrito){
+        sessionStorage.setItem('foto', productos[miBoton].querySelector("img").getAttribute('src'));
+        sessionStorage.setItem('producto', productos[miBoton].querySelector("h2").innerHTML);
+        sessionStorage.setItem('precio', productos[miBoton].querySelector("h3").innerHTML);
+        mostrar();
+    }else{
+        alert("El producto ya se encuentra en el carrito");
+    }
+    
+
+    
 }
 function mostrar(){
     var foto = document.getElementById("foto");
