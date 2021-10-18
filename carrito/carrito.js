@@ -8,7 +8,8 @@ function iniciar() {
     var comprar = document.getElementById("sumar");
     comprar.addEventListener("click", sumar);
     elemento.addEventListener("click", mostrarMenu);
-    
+    var btnPagar = document.getElementById("pagar");
+    btnPagar.addEventListener("click", pagar);
 
     var botones = document.querySelectorAll(".comprar");
     for(var f=0;f<botones.length; f++){
@@ -119,14 +120,9 @@ function mostrarMenu() {
         }
 } 
 
-function eliminar(){
-
-    
+function pagar(){
+    alert("¡PAGO EXITOSO!");
 }
-/*function borrar(posicion){
-    var btnEliminar = document.querySelectorAll(".divBorrar");
-    btnEliminar[posicion].parentNode.removeChild(btnEliminar[posicion]);
-}*/
 
 function sumar(){
     var total = document.getElementById("totalPagar");
